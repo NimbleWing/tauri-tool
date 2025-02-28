@@ -3,12 +3,14 @@
   "productName": "tauri-tool",
   "version": "0.1.0",
   "identifier": "com.tauri-tool.app",
+  // The build configuration
   "build": {
     "beforeDevCommand": "yarn dev",
     "devUrl": "http://localhost:1420",
     "beforeBuildCommand": "yarn build",
     "frontendDist": "../dist"
   },
+  // The Tauri configuration
   "app": {
     "windows": [
       {
@@ -21,6 +23,7 @@
       "csp": null
     }
   },
+  // the bundle configuration
   "bundle": {
     "active": true,
     "targets": "all",
@@ -31,5 +34,9 @@
       "icons/icon.icns",
       "icons/icon.ico"
     ]
-  }
+  },
+  // The plugins configuration
+  "plugins": {
+
+  },
 }
